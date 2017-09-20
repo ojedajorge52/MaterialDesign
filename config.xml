@@ -28,7 +28,6 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
 		<preference name="UIWebViewDecelerationSpeed" value="fast" />
 		<!-- fin soporta para IOS -->
-    <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
     <icon src="icon.png" />

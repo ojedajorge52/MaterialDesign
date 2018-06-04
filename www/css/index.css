@@ -1,0 +1,12 @@
+.breadcrumb{
+			color: black;
+	}
+.logo{
+	width: 160px; height: 35px; margin-top: 5px; margin-left: 5px;
+	}
+nav{
+            background-color: #673AB7;
+ 	}
+nav a ul, nav a{
+            color: white;
+        }

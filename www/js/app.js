@@ -4,24 +4,13 @@ $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({fullWidth: true});
     
 
-});
-
-/**
-
-    $('#get').click(function(){
-    	$.ajax({
-    	url:'users_validate.php',
-    	data:"",
-    	dataType:'json',
-    	success: function(data){
-    		console.log(data);
-    		
-    		}
-    	});
-
+    $('#mode').click(function() {
+        if($(this).is(':checked')){
+			$('#stylesheet').attr('href', 'css/index1.css');
+			$('#theme-color').attr('content', '#ffffff');
+		}else{
+			$('#stylesheet').attr('href', 'css/night-mode.css');
+			$('#theme-color').attr('content', '#555555');
+		}
     });
-    
-
-
-  });
-*/
+});

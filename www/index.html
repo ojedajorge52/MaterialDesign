@@ -1,135 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#673AB7">
-	<title>Home | Welcome</title>
-	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/material-icons.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+        <meta id="theme-color-here" name="theme-color" content="#555555">
+        
+        <style>
+            body{
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+            main{
+                flex: 1 0 auto;
+            }
+        </style>
+    </head>
+    <body id="intro">
+        <header>
+            <div class="navbar-fixed">
+                    <nav class="z-depth-0">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo inline" style="font-family: cursive">materialize</a>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="home.html">Página principal</a></li>
+                                <li><a href="aprender.html">Aprender</a></li>
+                                <li><a href="probar.html">Prueba tus conocimientos</a></li>
+                                <li><a href="blog.html">Javascript</a></li>
+                                <li><a href="mobile.html">Mobile</a></li>
+                            </ul>  
+                        </div>
+                    </nav>
+                    </div>
+                    <ul class="side-nav" id="mobile-demo">
+                                <li><a href="home.html">Página principal</a></li>
+                                <li><a href="aprender.html">Aprender</a></li>
+                                <li><a href="probar.html">Prueba tus conocimientos</a></li>
+                                <li><a href="blog.html">Javascript</a></li>
+                                <li><a href="mobile.html">Mobile</a></li>
+                            </ul>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="center-align" id="favorite">My favorite food is <strong>Steak</strong></h1>
+                <a href="home.html" class="btn-floating btn-large waves-effect right waves-light yellow z-depth-3"><i class=" material-icons">send</i></a>
+                
+            </div>
+            
 
-</head>
-<body>
-	<div class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo"><img style="width: 160px; height: 35px; margin-top: 10px; margin-left: 5px;" src="img/logo2.png"></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-			 	<li class="active"><a href="">Página principal</a></li>
-				<li><a href="aprender.html">Aprender</a></li>
-				<li><a href="probar.html">Prueba tus conocimientos</a></li>
-				<li><a href="blog.html">Javascript</a></li>
-				<li><a href="mobile.html">Mobile</a></li>
-			</ul>  
-		</div>
-	</nav>
-	</div>
-	<ul class="side-nav" id="mobile-demo">
-			 	<li class="active"><a href="">Página principal</a></li>
-				<li><a href="aprender.html">Aprender</a></li>
-				<li><a href="probar.html">Prueba tus conocimientos</a></li>
-				<li><a href="blog.html">Javascript</a></li>
-				<li><a href="mobile.html">Mobile</a></li>
-			</ul>
-		     
-	<div class="container">
-        <table>
-        <thead>
-          <tr>
-              <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-        </tbody>
-      </table>
-       
-	       
-	</div>
-	<script type="text/javascript"  src="js/jquery.min.js"></script>
-<script type="text/javascript"  src="js/materialize.min.js"></script>
-<script type="text/javascript"  src="js/hammer.min.js"></script>
-<script type="text/javascript">
-	$(".button-collapse").sideNav();
-</script>
-</body>
+        </main>
+        
+        <script type="text/javascript"  src="js/jquery.min.js"></script>
+        <script type="text/javascript"  src="js/materialize.min.js"></script>
+        <script type="text/javascript"  src="js/hammer.min.js"></script>
+        <script type="text/javascript">
+            $(".button-collapse").sideNav();
+            function color(){
+                var current_number = Math.floor((Math.random() * 10) + 1);
+                switch(current_number){
+                    case 1:
+                        $('#intro').css('background-color', '#5856d6');
+                        $('#theme-color-here').attr('content', '#5856d6');
+                        break;
+                    case 2:
+                        $('#intro').css('background-color', '#007aff');
+                        $('#theme-color-here').attr('content', '#007aff');
+                        break;
+                    case 3:
+                        $('#intro').css('background-color', '#34aadc');
+                        $('#theme-color-here').attr('content', '#34aadc');
+                        break;
+                    case 4:
+                        $('#intro').css('background-color', '#5ac8fa');
+                        $('#theme-color-here').attr('content', '#5ac8fa');
+                        break;
+                    case 5:
+                        $('#intro').css('background-color', '#4cd964');
+                        $('#theme-color-here').attr('content', '#4cd964');
+                        break;
+                    case 6:
+                        $('#intro').css('background-color', '#ff2d55');
+                        $('#theme-color-here').attr('content', '#ff2d55');
+                        break;
+                    case 7:
+                        $('#intro').css('background-color', '#ff3b30');
+                        $('#theme-color-here').attr('content', '#ff3b30');
+                        break;
+                    case 8:
+                        $('#intro').css('background-color', '#ff9500');
+                        $('#theme-color-here').attr('content', '#ff9500');
+                        break;
+                    case 9:
+                        $('#intro').css('background-color', '#ffcc00');
+                        $('#theme-color-here').attr('content', '#ffcc00');
+                        break;
+                    case 10:
+                        $('#intro').css('background-color', '#8e8e93');
+                        $('#theme-color-here').attr('content', '#8e8e93');
+                        break;
+                }
+            }
+        color();
+        </script>
+    </body>
 </html>

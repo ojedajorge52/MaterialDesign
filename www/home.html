@@ -3,40 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#673AB7">
 	<title>Home | Welcome</title>
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
-	<link id="stylesheet" rel="stylesheet" type="text/css" href="css/night-mode.css">
-	<meta id="theme-color" name="theme-color" content="#555555">
+	<link rel="stylesheet" type="text/css" href="css/index1.css">
 	
 </head>
 <body>
-	<div class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo"><h5>Materialize</h5></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-			 	<li class="active"><a href="">Página principal</a></li>
-				<li><a href="aprender.html">Aprender</a></li>
-				<li><a href="probar.html">Prueba tus conocimientos</a></li>
-				<li><a href="blog.html">Javascript</a></li>
-				<li><a href="mobile.html">Mobile</a></li>
-			</ul>  
-		</div>
-	</nav>
-	</div>
-	<ul class="side-nav" id="mobile-demo">
-		<li class="active"><a href="">Página principal</a></li>
-		<li><a href="aprender.html">Aprender</a></li>
-		<li><a href="probar.html">Prueba tus conocimientos</a></li>
-		<li><a href="blog.html">Javascript</a></li>
-		<li><a href="mobile.html">Mobile</a></li>
-	</ul>
-		     
+		
+			<nav class="nav-extended">
+				<div class="nav-wrapper">
+				  <a href="#" class="brand-logo left" id="home_tabs"><h5>Materialize</h5></a>
+				  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				  <ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				  </ul>
+				  <ul class="side-nav" id="mobile-demo">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				  </ul>
+				</div>
+				<div class="nav-content ">
+				  <ul class="tabs tabs-transparent">
+					<li class="tab"><a href="#test1">Test 1</a></li>
+					<li class="tab"><a href="#test2">Test 2</a></li>
+					<li class="tab"><a href="#test3">Test 3</a></li>
+					<li class="tab"><a href="#test4">Test 4</a></li>
+				  </ul>
+				</div>
+			  </nav>
+			
+			  <div id="test1" class="col s12">Test 1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas, voluptate, error aperiam impedit quasi ex a optio consectetur perferendis sed quam iusto. Magnam suscipit fugiat facere, ipsa ab voluptatum.</div>
+			  <div id="test2" class="col s12">Test 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto tempora quae sunt voluptas blanditiis voluptatem ipsa et nisi laboriosam ut! Veritatis ratione est beatae eligendi doloremque esse assumenda et veniam.</div>
+			  <div id="test3" class="col s12">Test 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt doloremque vel laudantium, ipsum modi tempora? Natus officia sequi, molestias nam sapiente, nulla vero illum laborum voluptatem non ipsa ex.</div>
+			  <div id="test4" class="col s12">Test 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea dolor numquam natus quibusdam. Quas, ipsam ducimus ex ut, nulla veniam inventore, libero laboriosam accusamus rerum modi commodi consectetur. Alias, nihil!</div>
+					
+			
 	<div class="container">
-	<div  class="switch right-align">
-		Light mode &nbsp;
+
+	<div  class="switch right-align"><br>
+		Modo nocturno &nbsp;
 		<label>
 			Off
 			<input class="blue" id="mode" type="checkbox">
@@ -44,7 +54,7 @@
 			On
 		</label>
 	</div>
-	
+	<br>
 					<div class="card">
 						  <div class="card-content">
 							  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, earum facilis similique cupiditate delectus, nihil atque eos voluptas sit harum perferendis illo voluptatum numquam blanditiis! Inventore accusantium iure consequatur alias.</p>
@@ -70,11 +80,15 @@
 	       
 	</div>
 	<script type="text/javascript"  src="js/jquery.min.js"></script>
-	<script type="text/javascript"  src="js/materialize.min.js"></script>
+	<script src='materialize.min.js'></script>
 	<script type="text/javascript"  src="js/hammer.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript">
 		$(".button-collapse").sideNav();
+		$('ul.tabs').tabs({
+		swipeable : true,
+		responsiveThreshold : 1920
+		});
 
 	</script>
 

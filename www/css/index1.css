@@ -1,0 +1,71 @@
+.breadcrumb{
+    color: black;
+}
+
+nav{
+background-color: #5279bb;
+color: #000;
+}
+nav a ul, nav a{
+    color: white;
+}
+
+#intro{
+
+}
+
+#favorite{
+font-size: 6em;
+color: white;
+}
+.card{
+    width: 100%;
+    color: #000;
+}
+body{
+    background-color: #f7f7f7;
+    color: #555555;
+}
+a.brand-logo{
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+ul li a{
+    color: #555555;
+    
+}
+
+.btn-flat, .btn{
+    border-radius: 15px;
+    text-transform: capitalize;    
+    font-weight: bold;
+    color: white;
+    
+}
+.tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover{
+    color: #bdd4fd;
+}
+.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active {
+    color: white;
+    font-weight: inherit;
+}
+.tabs.tabs-transparent .tab a.active{
+    font-weight: bold;
+}
+.tabs.tabs-transparent .indicator {
+    background-color: white;
+}
+.carousel .carousel-item{
+    width:100%;
+}
+.switch{
+    margin-top: 3%;
+}
+.tabs {
+    position: fixed;
+    position: static;
+  }
+  #home_tabs{
+      margin-left: 50px;
+  }

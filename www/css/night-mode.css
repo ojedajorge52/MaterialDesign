@@ -1,0 +1,47 @@
+.breadcrumb{
+    color: black;
+}
+
+nav{
+background-color: #555555;
+}
+
+
+#favorite{
+font-size: 6em;
+color: white;
+}
+.card{
+    width: 100%;
+    
+}
+body{
+    background-color: #404042;
+    
+}
+a.brand-logo{
+    color: #ffffff;
+}
+
+.btn-flat, .btn{
+    border-radius: 15px;
+    text-transform: capitalize;
+    shape-margin: 0%;
+    
+    font-weight: bold;
+    color: white;
+    
+}
+
+.carousel .carousel-item{
+    width:100%;
+}
+.card{
+    background-color: #555555;
+    color: #ffffff;
+}
+.switch{
+    margin-top: 3%;
+    color: white;
+}
+

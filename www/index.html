@@ -7,49 +7,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/material-icons.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-        <meta id="theme-color-here" name="theme-color" content="#555555">
-        
-        <style>
-            body{
-                display: flex;
-                min-height: 100vh;
-                flex-direction: column;
-            }
-            main{
-                flex: 1 0 auto;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index1.css" />
+ 
     </head>
     <body id="intro">
+        
         <header>
+            <style>
+                html{
+                    background-color: #5279bb;
+                    font-size: 100%;
+                }
+                #mobile-demo li{
+                    width: 100%;
+                }
+                #tex{
+                    font-size: 0.875em;
+                }
+            </style>
             <div class="navbar-fixed">
                     <nav class="z-depth-0">
                         <div class="nav-wrapper">
-                            <a href="#!" class="brand-logo inline" style="font-family: cursive">materialize</a>
+                            <a href="#!" class="brand-logo left"><h5>Materialize</h5></a>
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="home.html">Página principal</a></li>
-                                <li><a href="aprender.html">Aprender</a></li>
-                                <li><a href="probar.html">Prueba tus conocimientos</a></li>
-                                <li><a href="blog.html">Javascript</a></li>
-                                <li><a href="mobile.html">Mobile</a></li>
+                                    <li class="waves-effect"><a href="aprender.html"><i class="material-icons left">book</i>Aprender</a></li>
+                                    <li class="waves-effect"><a href="probar.html"><i class="material-icons left">play_circle_filled</i>Pronunciación</a></li>
+                                    <li class="waves-effect"><a href="creditos.html"><i class="material-icons left">info_outline</i>Créditos</a></li>
                             </ul>  
                         </div>
                     </nav>
                     </div>
                     <ul class="side-nav" id="mobile-demo">
-                                <li><a href="home.html">Página principal</a></li>
-                                <li><a href="aprender.html">Aprender</a></li>
-                                <li><a href="probar.html">Prueba tus conocimientos</a></li>
-                                <li><a href="blog.html">Javascript</a></li>
-                                <li><a href="mobile.html">Mobile</a></li>
-                            </ul>
+                        <img style="width: 100%; height: 150px;" src="img/office.png" alt="">
+                        <li><a class="subheader">NAVEGACION   </a></li>
+                         <li class="waves-effect"><a href="home.html"><i class="material-icons left">home</i>Página principal</a></li>
+                            
+                         <li class="waves-effect"><a href="aprender.html"><i class="material-icons">book</i>Aprender</a></li>
+                         <li class="waves-effect"><a href="probar.html"><i class="material-icons left">play_circle_filled</i>Pronunciación</a></li>
+                         <li class="divider"></li>
+                         <li><a class="subheader">INFORMACION   </a></li>
+                         <li class="waves-effect"><a href="creditos.html"><i class="material-icons left">info_outline</i>Créditos</a></li>
+                    </ul>
         </header>
         <main>
             <div class="container">
-                <h1 class="center-align" id="favorite">My favorite food is <strong>Steak</strong></h1>
-                <a href="home.html" class="btn-floating btn-large waves-effect right waves-light yellow z-depth-3"><i class=" material-icons">send</i></a>
+                <div id="tex" class="center-align ">
+                        <p class="center-align flow-text" id="favorite"></p>
+                        <blockquote class="flow-text right"></blockquote>
+                </div>
+                <div class="fixed-action-btn" style="bottom: 60px; right: 24px;">
+                        <a href="home.html" class="btn-floating btn-large waves-effect right waves-light yellow z-depth-3">
+                            <i class=" material-icons">send</i>
+                        </a>
+                </div>
+                
                 
             </div>
             
@@ -61,52 +73,95 @@
         <script type="text/javascript"  src="js/hammer.min.js"></script>
         <script type="text/javascript">
             $(".button-collapse").sideNav();
-            function color(){
-                var current_number = Math.floor((Math.random() * 10) + 1);
-                switch(current_number){
+            function frase(){
+                var number = Math.floor((Math.random() * 20) + 1);
+                switch(number){
                     case 1:
-                        $('#intro').css('background-color', '#5856d6');
-                        $('#theme-color-here').attr('content', '#5856d6');
+                        var text = "Si hablas a una persona en una lengua que entiende, las palabras irán a su cabeza. Si le hablas en su propia lengua, las palabras irán a su corazón";
+                        var block = "Nelson Mandela";
                         break;
                     case 2:
-                        $('#intro').css('background-color', '#007aff');
-                        $('#theme-color-here').attr('content', '#007aff');
+                        var text = "Aprender un idioma es tener una ventana más desde la que observar el mundo.";
+                        var block = "Proverbio Chino";
                         break;
                     case 3:
-                        $('#intro').css('background-color', '#34aadc');
-                        $('#theme-color-here').attr('content', '#34aadc');
+                        var text = "Saber otro idioma es como poseer una segunda alma.";
+                        var block = "Carlomagno";
                         break;
                     case 4:
-                        $('#intro').css('background-color', '#5ac8fa');
-                        $('#theme-color-here').attr('content', '#5ac8fa');
+                        var text = "Los límites de mi lenguaje son los límites de mi mente.";
+                        var block = "Ludwig Wittgenstein";          
                         break;
                     case 5:
-                        $('#intro').css('background-color', '#4cd964');
-                        $('#theme-color-here').attr('content', '#4cd964');
+                        var text = "Actualmente, el destino del mundo depende, en primer lugar, de los estadistas y, en segundo var lugar, de los intérpretes.";
+                        var block = " Ttrygve Halvdan Lie";
                         break;
                     case 6:
-                        $('#intro').css('background-color', '#ff2d55');
-                        $('#theme-color-here').attr('content', '#ff2d55');
+                        var text = "Cada idioma es un modo diferente de ver la vida. ";
+                        var block = "Federico Fellini";
                         break;
                     case 7:
-                        $('#intro').css('background-color', '#ff3b30');
-                        $('#theme-color-here').attr('content', '#ff3b30');
+                        var text = "El hombre no es más que la mitad de sí mismo. La otra mitad es su expresión. ";
+                        var block = "Ralph W. Emerson";
                         break;
                     case 8:
-                        $('#intro').css('background-color', '#ff9500');
-                        $('#theme-color-here').attr('content', '#ff9500');
+                        var text = "Un idioma te coloca en un pasillo de por vida. Dos idiomas te abren todas las puertas del var recorrido.";
+                        var block = " Frank Smith";
                         break;
                     case 9:
-                        $('#intro').css('background-color', '#ffcc00');
-                        $('#theme-color-here').attr('content', '#ffcc00');
+                        var text = "Habla una nueva lengua para que el mundo sea un nuevo mundo. ";
+                        var block = "Rumi";
                         break;
                     case 10:
-                        $('#intro').css('background-color', '#8e8e93');
-                        $('#theme-color-here').attr('content', '#8e8e93');
+                        var text = "El lenguaje es el vestido de los pensamientos. ";
+                        var block = "Samuel Johnson";
                         break;
+                    case 11:
+                        var text = "Quien no conoce lenguas extranjeras, nada sabe de la suya propia.  ";
+                        var block = "Johann Wolfgang von Goeth";
+                        break;
+                    case 12:
+                        var text = "El lenguaje nos ayuda a capturar el mundo, y cuanto menos lenguaje tengamos, menos mundo capturamos. ";
+                        var block = "Fernando Lázaro Carreter";
+                        break;
+                    case 13:
+                        var text = "El lenguaje es el mapa de una cultura. Te dice de dónde viene su gente y a dónde se dirigen. ";
+                        var block = "Rita Mae Brown";
+                        break;
+                    case 14:
+                        var text = "Con los idiomas estás en casa en cualquier lugar. ";
+                        var block = "Edward De Waal";
+                        break;
+                    case 15:
+                        var text = "Nunca podrás entender un idioma hasta que entiendas al menos dos. ";
+                        var block = "Geoffrey Williams";
+                        break;
+                    case 16:
+                        var text = "Un hombre que sabe dos idiomas vale por dos hombres.  ";
+                        var block = "Proverbio francés";
+                        break;
+                    case 17:
+                        var text = "Vives una nueva vida por cada idioma nuevo que hablas. Si conoces sólo un idioma, sólo vives una vez. ";
+                        var block = "Proverbio checo";
+                        break;
+                    case 18:
+                        var text = "El conocimiento de idiomas es la puerta a la sabiduría. ";
+                        var block = "Roger Bacon";
+                        break;
+                    case 19:
+                        var text = "El lenguaje no es un regalo genético, es un regalo social. Aprender un nuevo idioma es llegar a ser un miembro del club -de la comunidad de hablantes de esa lengua. ";
+                        var block = "Frank Smith";
+                        break;
+                    case 20:
+                        var text = "Posee sólo lo que puedas llevar contigo, conoce idiomas, conoce países, conoce gente. Haz de tu memoria tu bolsa de viaje. ";
+                        var block = "Aleksandr Solzhenitsyn";
+                        break;
+
                 }
+                $('#favorite').text(text);
+                $('blockquote').text(block);
             }
-        color();
+            frase();
         </script>
     </body>
 </html>

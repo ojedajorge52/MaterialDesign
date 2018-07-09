@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#673AB7">
+
+	<title>Home | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/index1.css">
+	<style>
+		.carousel {
+height: 80vh !important;
+}
+	</style>
+
+</head>
+<body>
+		<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper">
+						<a href="#!" class="brand-logo left"><h5>Materialize</h5></a>
+						
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
+								<li class="waves-effect"><a href="aprender.html"><i class="material-icons left">book</i>Aprender</a></li>
+								<li class="waves-effect active"><a href="probar.html"><i class="material-icons left">play_circle_filled</i>Pronunciación</a></li>
+								<li class="waves-effect"><a href="creditos.html"><i class="material-icons left">info_outline</i>Créditos</a></li>
+						</ul>
+					</div>
+				  </nav>
+			</div>
+			<ul class="side-nav" id="mobile-demo">
+					<img style="width: 100%; height: 150px;" src="img/office.png" alt="">
+					<li><a class="subheader">NAVEGACION   </a></li>
+					 <li class="waves-effect"><a href="home.html"><i class="material-icons left">home</i>Página principal</a></li>
+						
+					 <li class="waves-effect"><a href="aprender.html"><i class="material-icons">book</i>Aprender</a></li>
+					 <li class="waves-effect active"><a href="probar.html"><i class="material-icons left">play_circle_filled</i>Pronunciación</a></li>
+					 <li class="divider"></li>
+					 <li><a class="subheader">INFORMACION   </a></li>
+					 <li class="waves-effect"><a href="creditos.html"><i class="material-icons left">info_outline</i>Créditos</a></li>
+				</ul>
+	<div class="container">
+		<br>
+  		<div class="carousel carousel-slider center" data-indicators="true">
+		    
+				<div class="carousel-item amber white-text" href="#one!">
+						<h2>Pájaro</h2>	
+						<p class="white-text">Yáda</p>
+						<div class="carousel-fixed-item center">
+							  <button id="mic_pajaro" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons">mic</i></button>
+						</div>		    	
+						<img class="responsive-img" src="img/animals.jpg">
+						
+					</div>
+
+		    <div class="carousel-item purple white-text" href="#two!">
+		    	<h2>Caballo</h2>	
+		    	<p class="white-text">Yúduu</p>
+		    	<div class="carousel-fixed-item center">
+      				<button id="mic_caballo" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons">mic</i></button>
+    			</div>		    	
+		    	<img class="responsive-img" src="img/caballo.jpg">
+		    	
+		    </div>
+
+		    <div class="carousel-item green white-text" href="#three!">
+		    	<h2>Third Panel</h2>
+		    	<p class="white-text">This is your third panel</p>
+		    	<div class="carousel-fixed-item center">
+      				<a class="btn-floating btn-large waves-effect waves-light red darken-1"><i class="material-icons">mic</i></a>
+    			</div>
+		    	<img class="responsive-img" src="img/casa.jpg">
+		    	
+		    </div>
+
+		    <div class="carousel-item blue white-text" href="#four!">
+		    	<h2>Fourth Panel</h2>
+		    	<p class="white-text">This is your fourth panel</p>
+		    	<div class="carousel-fixed-item center">
+      				<button  class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons">mic</i></button>
+    			</div>
+		    	<img class="responsive-img" src="img/body2.png">
+		    	
+		    </div>
+    	</div>
+  		
+<br>
+
+
+	</div>
+	<script type="text/javascript"  src="js/jquery.min.js"></script>
+<script type="text/javascript"  src="js/materialize.min.js"></script>
+<script type="text/javascript"  src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="js/annyang.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		Materialize.toast('Presiona el micrófono y pronuncia la palabra', 3000);
+		$('#mic_pajaro').mousedown(function(){
+			if (annyang) {
+        var commands = {
+            'pajaro': function(){
+                Materialize.toast('Correcto', 2000);
+            }
+        };
+
+        // Añadimos los comandos
+        annyang.addCommands(commands);
+        annyang.setLanguage('es-MX');
+        // Empezamos la escucha
+        annyang.start();
+    }
+		})
+	})
+</script>
+</body>
+</html>

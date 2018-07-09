@@ -10,29 +10,33 @@ nav a ul, nav a{
     color: white;
 }
 
-#intro{
 
-}
 
 #favorite{
-font-size: 6em;
 color: white;
+    font-size-adjust: inherit;
 }
 .card{
     width: 100%;
     color: #000;
+    margin-bottom: 0px;
+
 }
 body{
     background-color: #f7f7f7;
     color: #555555;
 }
+#intro{
+    background-color: #5279bb;
+    font-size: 3em;
+    }
 a.brand-logo{
     color: white;
-    margin-left: 5px;
+    margin-left: 50px;
     margin-top: 5px;
 }
 ul li a{
-    color: #555555;
+    color: #ffffff;
     
 }
 
@@ -59,6 +63,7 @@ ul li a{
 .carousel .carousel-item{
     width:100%;
 }
+
 .switch{
     margin-top: 3%;
 }
@@ -69,3 +74,36 @@ ul li a{
   #home_tabs{
       margin-left: 50px;
   }
+#tex{
+    height: 80%;
+    margin-top: 30%;
+    font-size-adjust: inherit;
+}
+blockquote{
+    color: #fff;
+    border-left: 5px solid #ffe000;
+}
+html{
+    height: 100vh;
+}
+.carousel {
+height: 100vh !important;
+}
+#test1, #test2, #test3{
+    height: 100vh !important;
+}
+.link{
+    height: 87px;
+    background-color: #5279bb;
+    color:white;
+    
+}
+.url-{
+    color: #555555 !important;
+}
+.collection small.url-{
+    color: #555555 !important;
+}
+#mobile-demo li{
+    width: 100%;
+}
